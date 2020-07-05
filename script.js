@@ -201,6 +201,11 @@ areas.forEach(area => {
 inputs.forEach(input => {
   input.addEventListener('input', () => {
       let idInput = input.id
+      if (idInput === 'edge'){
+        restart.style.color = '#ff2234'
+        restart.style.fontWeight = 'bold'
+        restart.style.opacity = 0.9
+      }
       set[idInput] = +input.value
       input.nextElementSibling.textContent = input.value
       dotsList = []

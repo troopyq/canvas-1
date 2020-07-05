@@ -18,6 +18,7 @@ const modal = (id, addClass, setInput) => {
     inputs.forEach(input => {
         input.addEventListener('input', () => {
             let idInput = input.id
+            
             set[idInput] = +input.value
             input.nextElementSibling.textContent = input.value
         })

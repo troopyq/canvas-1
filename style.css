@@ -1,5 +1,9 @@
 *{
     box-sizing: border-box;
+    overflow: hidden;
+}
+html{
+  overflow: hidden;
 }
 body{
     margin: 0;
@@ -9,6 +13,7 @@ body{
 
 canvas{
     background-color: rgb(30,30,30);
+    overflow: hidden;
 }
 :root{
 --width-block: 450px;
@@ -125,7 +130,14 @@ input[type='range']{
     width: 45% !important;
 }
 
-
+@media (max-width: 500px){
+  #windows{
+    left: 0%;
+  }
+  .block{
+    width: 100vw;
+  }
+}
 
 
 
