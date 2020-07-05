@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="windows">
+        <div class="block">
+            <div class="area">
+                <form action="#">
+                    <label for="edge">Кол-во граней</label>
+                    <input id="edge"  name="edge" type="range" min="2" max="20" step="1">
+                    <span class="values"></span>
+                </form>
+            </div>
+            <div class="area">
+                <form action="#">
+                    <label for="steps">Шагов до поворота</label>
+                    <input id="steps"  name="edge" type="range" min="2" max="200" step="1">
+                    <span class="values"></span>
+                </form>
+            </div>
+            <div class="area">
+                <form action="#">
+                    <label for="size">Размер точек</label>
+                    <input id="size"  name="edge" type="range" min="0" max="10" step="0.1">
+                    <span class="values"></span>
+                </form>
+            </div>
+            <div class="area">
+                <form action="#">
+                    <label for="dots">Кол-во точек</label>
+                    <input id="dots"  name="edge" type="range" min="2" max="3333" step="10">
+                    <span class="values"></span>
+                </form>
+            </div>
+            <div class="area">
+                <form action="#">
+                    <label for="vilocety">Скорость</label>
+                    <input id="vilocety"  name="edge" type="range" min="0" max="40" step="0.5">
+                    <span class="values"></span>
+                </form>
+            </div>
+            <div class="area">
+                <form action="#">
+                    <label for="distance">Растояние до смерти</label>
+                    <input id="distance"  name="edge" type="range" min="2" max="999" step="10">
+                    <span class="values"></span>
+                </form>
+            </div>
+            <div class="area">
+                <form action="#">
+                    <label for="gradient">Длина градиента</label>
+                    <input id="gradient"  name="edge" type="range" min="1" max="360" step="1">
+                    <span class="values"></span>
+                </form>
+            </div>
+            <div class="area">
+                <form action="#">
+                    <label for="chance">Шанс НЕ появления</label>
+                    <input id="chance"  name="edge" type="range" min="0" max="1" step="0.05">
+                    <span class="values"></span>
+                </form>
+            </div>
+            
+        </div>
+        <div id="openBtn" class="btn">Open</div>
+        <div id="restart" class="btn">Restart</div>
+
+    </div>
+    <canvas></canvas>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
