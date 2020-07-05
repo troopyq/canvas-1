@@ -190,6 +190,11 @@ import modal from './modal.js'
     inputs = document.querySelectorAll('input')
 
 
+
+canvas.addEventListener('click', () => {
+    closeWind()
+})
+
 areas.forEach(area => {
   let values = area.querySelector('.values')
   let input = area.querySelector('input')
